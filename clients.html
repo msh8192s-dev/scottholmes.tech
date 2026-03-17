@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clients | Scott Holmes – Digital Technology Consultant</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <style>
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Client profile card */
+    .client-profile {
+      border-radius: 20px;
+      border: 1px solid var(--border-subtle);
+      background: var(--card);
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+    }
+    body.theme-light .client-profile {
+      background: #ffffff;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .client-profile-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 14px;
+    }
+
+    .client-profile-logo {
+      width: 90px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .client-profile h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .client-profile a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .client-profile-section {
+      margin-top: 14px;
+    }
+
+    .client-profile-section h3 {
+      margin-bottom: 6px;
+      font-size: 1rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .client-profile-section p,
+    .client-profile-section ul {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .client-profile-section ul {
+      padding-left: 20px;
+    }
+
+    /* Optional gallery */
+    .client-gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .client-gallery img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+
+<body class="theme-dark">
+  <canvas id="bg-particles"></canvas>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="Scott Holmes Logo" class="brand-logo" />
+      <div>
+        <div class="brand-name">Scott Holmes</div>
+        <div class="brand-tagline">Digital Technology Consultant</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" type="button">☾</button>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="section fade-in">
+      <div class="section-header">
+        <h2 class="section-title">Client Profiles</h2>
+        <p class="section-kicker">A deeper look at the teams and organizations I support.</p>
+      </div>
+
+      <!-- CLIENT 1 -->
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/heart-soul-logo.svg" class="client-profile-logo">
+          <div>
+            <h2>Heart & Soul Catering</h2>
+            <a href="https://www.heartsoulcatering.com" target="_blank">www.heartsoulcatering.com →</a>
+          </div>
+        </div>
+
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Full‑service catering company specializing in weddings, corporate events, and premium dining experiences.</p>
+        </div>
+
+        <div class="client-profile-section">
+          <h3>Services Provided</h3>
+          <ul>
+            <li>Website redesign</li>
+            <li>Hosting & maintenance</li>
+            <li>SEO optimization</li>
+            <li>Menu updates</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CLIENT 2 -->
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/grassfire-logo.svg" class="client-profile-logo">
+          <div>
+            <h2>Grassfire Bluegrass Band</h2>
+            <a href="https://grassfirebluegrassband.com" target="_blank">grassfirebluegrassband.com →</a>
+          </div>
+        </div>
+
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>A high‑energy bluegrass band performing across the Southeast with a modern, crowd‑pleasing sound.</p>
+        </div>
+
+        <div class="client-profile-section">
+          <h3>Services Provided</h3>
+          <ul>
+            <li>Band website build</li>
+            <li>Show schedule updates</li>
+            <li>Media gallery management</li>
+            <li>Hosting & support</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CLIENT 3–8 (Placeholders) -->
+      <!-- These follow the same structure -->
+      <!-- I’ll keep them concise but fully functional -->
+
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/client3.svg" class="client-profile-logo">
+          <div>
+            <h2>Client 3</h2>
+            <a href="#" target="_blank">Website coming soon →</a>
+          </div>
+        </div>
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Placeholder description for future client.</p>
+        </div>
+      </div>
+
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/client4.svg" class="client-profile-logo">
+          <div>
+            <h2>Client 4</h2>
+            <a href="#" target="_blank">Website coming soon →</a>
+          </div>
+        </div>
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Placeholder description for future client.</p>
+        </div>
+      </div>
+
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/client5.svg" class="client-profile-logo">
+          <div>
+            <h2>Client 5</h2>
+            <a href="#" target="_blank">Website coming soon →</a>
+          </div>
+        </div>
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Placeholder description for future client.</p>
+        </div>
+      </div>
+
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/client6.svg" class="client-profile-logo">
+          <div>
+            <h2>Client 6</h2>
+            <a href="#" target="_blank">Website coming soon →</a>
+          </div>
+        </div>
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Placeholder description for future client.</p>
+        </div>
+      </div>
+
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/client7.svg" class="client-profile-logo">
+          <div>
+            <h2>Client 7</h2>
+            <a href="#" target="_blank">Website coming soon →</a>
+          </div>
+        </div>
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Placeholder description for future client.</p>
+        </div>
+      </div>
+
+      <div class="client-profile fade-in">
+        <div class="client-profile-header">
+          <img src="assets/client8.svg" class="client-profile-logo">
+          <div>
+            <h2>Client 8</h2>
+            <a href="#" target="_blank">Website coming soon →</a>
+          </div>
+        </div>
+        <div class="client-profile-section">
+          <h3>About</h3>
+          <p>Placeholder description for future client.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Scott Holmes · Digital Technology Consultant</span>
+    <a href="#top" class="footer-link">Back to top ↑</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

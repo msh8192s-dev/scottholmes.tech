@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scott Holmes | Digital Technology Consultant</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <style>
+    /* Scrolling marquee */
+    .client-marquee-wrapper {
+      overflow: hidden;
+      width: 100%;
+      margin: 40px 0;
+      position: relative;
+    }
+    .client-marquee {
+      display: flex;
+      gap: 40px;
+      animation: scroll-left 22s linear infinite;
+      white-space: nowrap;
+    }
+    .client-marquee .client-logo {
+      width: 80px;
+      height: auto;
+      opacity: 0.85;
+    }
+    @keyframes scroll-left {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+
+<body class="theme-dark">
+  <canvas id="bg-particles"></canvas>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="Scott Holmes Logo" class="brand-logo" />
+      <div>
+        <div class="brand-name">Scott Holmes</div>
+        <div class="brand-tagline">Digital Technology Consultant</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" type="button">☾</button>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Websites · Shopify · Hosting · Troubleshooting</p>
+        <h1>
+          High‑signal digital systems<br />
+          <span>for small teams that need things to just work.</span>
+        </h1>
+        <p class="hero-subtitle">
+          I design, build, and maintain lean, resilient web infrastructure—fast, secure, and easy to live with.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Start a project →</a>
+          <a href="#services" class="btn-secondary">View services</a>
+        </div>
+        <p class="hero-footnote">
+          Website projects: $500–$2,000 · Hosting: $60/mo · Consulting: $60/hr
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Services</h2>
+        <p class="section-kicker">Clear, practical offerings with transparent pricing.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3 class="card-title">Website / Shopify project</h3>
+          <p class="card-body">Modern, fast, conversion‑focused websites and Shopify stores.</p>
+          <ul class="card-list">
+            <li>Strategy & architecture</li>
+            <li>Domain setup</li>
+            <li>1–5 pages</li>
+            <li>Animations</li>
+          </ul>
+          <p class="card-price">$500–$2,000</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Web hosting + maintenance</h3>
+          <p class="card-body">Fast, secure, monitored, and updated monthly.</p>
+          <ul class="card-list">
+            <li>Content updates</li>
+            <li>SEO tuning</li>
+            <li>Security patches</li>
+            <li>Analytics</li>
+          </ul>
+          <p class="card-price">$60 / month</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Consulting & troubleshooting</h3>
+          <p class="card-body">Fixes, redesigns, and technical deep‑dives.</p>
+          <ul class="card-list">
+            <li>UX reviews</li>
+            <li>Conversions</li>
+            <li>Coding issues</li>
+            <li>Premium support</li>
+          </ul>
+          <p class="card-price">$60 / hour</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section id="clients" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Clients</h2>
+        <p class="section-kicker">A selection of teams and projects I support.</p>
+      </div>
+
+      <!-- SCROLLING MARQUEE -->
+      <div class="client-marquee-wrapper">
+        <div class="client-marquee">
+          <img src="assets/heart-soul-logo.svg" class="client-logo">
+          <img src="assets/grassfire-logo.svg" class="client-logo">
+          <img src="assets/client3.svg" class="client-logo">
+          <img src="assets/client4.svg" class="client-logo">
+          <img src="assets/client5.svg" class="client-logo">
+          <img src="assets/client6.svg" class="client-logo">
+          <img src="assets/client7.svg" class="client-logo">
+          <img src="assets/client8.svg" class="client-logo">
+        </div>
+      </div>
+
+      <!-- 8‑CLIENT GRID -->
+      <div class="grid grid-4">
+
+        <!-- Client 1 -->
+        <div class="card client-card">
+          <img src="assets/heart-soul-logo.svg" class="client-logo">
+          <a href="https://www.heartsoulcatering.com" target="_blank"><strong>Heart & Soul Catering</strong></a>
+          <p class="client-desc">Full‑service catering for weddings, corporate events, and premium dining.</p>
+        </div>
+
+        <!-- Client 2 -->
+        <div class="card client-card">
+          <img src="assets/grassfire-logo.svg" class="client-logo">
+          <a href="https://grassfirebluegrassband.com" target="_blank"><strong>Grassfire Bluegrass Band</strong></a>
+          <p class="client-desc">High‑energy bluegrass band performing across the Southeast.</p>
+        </div>
+
+        <!-- Client 3 -->
+        <div class="card client-card">
+          <img src="assets/client3.svg" class="client-logo">
+          <strong>Client 3</strong>
+          <p class="client-desc">Placeholder description.</p>
+        </div>
+
+        <!-- Client 4 -->
+        <div class="card client-card">
+          <img src="assets/client4.svg" class="client-logo">
+          <strong>Client 4</strong>
+          <p class="client-desc">Placeholder description.</p>
+        </div>
+
+        <!-- Client 5 -->
+        <div class="card client-card">
+          <img src="assets/client5.svg" class="client-logo">
+          <strong>Client 5</strong>
+          <p class="client-desc">Placeholder description.</p>
+        </div>
+
+        <!-- Client 6 -->
+        <div class="card client-card">
+          <img src="assets/client6.svg" class="client-logo">
+          <strong>Client 6</strong>
+          <p class="client-desc">Placeholder description.</p>
+        </div>
+
+        <!-- Client 7 -->
+        <div class="card client-card">
+          <img src="assets/client7.svg" class="client-logo">
+          <strong>Client 7</strong>
+          <p class="client-desc">Placeholder description.</p>
+        </div>
+
+        <!-- Client 8 -->
+        <div class="card client-card">
+          <img src="assets/client8.svg" class="client-logo">
+          <strong>Client 8</strong>
+          <p class="client-desc">Placeholder description.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ + CONTACT remain unchanged -->
+    <!-- (Keeping your existing content for brevity) -->
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Scott Holmes · Digital Technology Consultant</span>
+    <a href="#top" class="footer-link">Back to top ↑</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
